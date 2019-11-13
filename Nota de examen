@@ -1,0 +1,24 @@
+//Dada una nota de un examen mediante un codigo escribir el literal que le corresponde a la nota
+#include <stdio.h>
+int main() {
+ 
+ char calificacion;
+ printf("Ingrese la nota de su examen: "); 
+ scanf("%c",&calificacion);
+ 
+ switch(calificacion)
+ {
+   case 'A': printf("Su calificacion es Excelente");
+   break;
+   case 'B': printf("Su calificacion es Notable");
+   break;
+   case 'C': printf("Su calificacion es Aprobado");
+   break;       
+   case 'D':
+   case 'F': printf("Su calificacion es Reprobado");
+   break;
+   default: printf("Letra no valida");   
+ }
+ 
+ return 0;
+}
