@@ -1,0 +1,18 @@
+//Suma de los n primeros numeros
+#include <stdio.h>
+int main() {
+ 
+ int cont=1, n, suma=0;
+ 
+ printf("¿Hasta que numero quieres sumar?: ");
+ scanf("%i", &n); 
+ 
+ while(cont <= n)
+ {
+   suma += cont;
+   cont++;
+ }
+ printf("%i", suma);
+ 
+ return 0;
+}
