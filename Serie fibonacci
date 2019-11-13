@@ -1,0 +1,20 @@
+//Serie fibonacci
+#include <stdio.h>
+int main() {
+ 
+ int x=0,y=1,z=1,largo;
+ 
+ printf("Serie fibonacci");
+ printf("\nIngrese la duracion del ciclo: ");
+ scanf("%i", &largo);
+ printf("0, ");
+ for(int i=1;i<=largo; i++)
+ {
+   printf("%i, ",z);
+   z = x + y;
+   x = y;
+   y = z;
+ }
+ 
+ return 0;
+}	
