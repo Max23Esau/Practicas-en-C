@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+  char letra = 'a';
+ do
+ {
+   printf("%c, ", letra);
+   letra++;
+ }while(letra <= 'z');
+  return 0;
+}
+
+/* Otra forma de hacerlo
+#include <stdio.h>
+int main() {
+
+  int letra = 97;
+  
+ do
+ {
+   printf("%c, ", (char)letra);
+   letra++;
+ }while(letra <= 122);
+  return 0;
+}
+
+*/
