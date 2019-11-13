@@ -1,0 +1,31 @@
+//Digite un numero, si es mayor a 10, multiplique los primeros numeros, sino, sumelos
+#include <stdio.h>
+int main() {
+ 
+ int multiplicacion = 1, numUser, suma = 0, iterador=1;
+ 
+ printf("Ingrese un numero entre 0 y 20: ");
+ scanf("%i", &numUser);
+ 
+ if(numUser >= 10)
+ {
+   while(iterador <= numUser)
+   {
+     multiplicacion *= iterador;
+     iterador++;
+   }
+   printf("%i es la multiplicacion de los primeros %i numeros",multiplicacion, numUser);
+ }
+ 
+ else if(numUser <= 10)
+ {
+   while(iterador <= numUser)
+   {
+     suma += iterador;
+     iterador++;
+   }
+   printf("%i es la suma de los primeros %i numeros", suma, numUser);   
+ }
+ 
+ return 0;
+}
