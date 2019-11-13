@@ -1,0 +1,35 @@
+//Selecciona el tipo de vehiculo, la cantidad de peaje y el precio final del paquete
+#include <stdio.h>
+int main() {
+
+ char transporte;
+ int peaje, precio;
+ 
+ printf("Bienvendo !\nEstos son los trasnportes disponibles");
+ printf("\n\n1 - Autobus $3000");
+ printf("\n2 - Auto $500");
+ printf("\n3 - Motocicleta $300");
+ printf("\nQue opcion eliges?\n");
+ scanf("%c", &transporte);
+ printf("\n¿Cuantas personas van a viajar?\n");
+ scanf("%i", &peaje);
+ 
+ switch(transporte)
+ {
+   case '1':
+     precio = peaje * 3000;
+     printf("\nEl precio final seria de: $%i", precio);
+   break;
+   case '2':
+     precio = peaje * 500;
+     printf("\nEl precio final seria de: $%i", precio);
+   break;
+   case '3':
+     precio = peaje * 300;
+     printf("\nEl precio final seria de: $%i", precio);
+   break;
+   default: printf("Opcion no valida");       
+ }
+ 
+ return 0;
+}
