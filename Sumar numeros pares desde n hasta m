@@ -1,0 +1,26 @@
+//Sumar numeros pares desde n hasta m
+#include <stdio.h>
+ 
+int main() {
+  
+  int suma = 0, n, m, i;
+  
+ printf("Sumemos numeros pares desde n hasta m");
+ printf("\n\nIngresa el primer numero: ");
+ scanf("%i", &n);
+ 
+ printf("\nIngresa el segundo numero: ");
+ scanf("%i", &m);
+ 
+ 
+ while(n <= m)
+ {
+   if(n % 2 == 0)
+   {
+     suma = suma + n;
+   }
+   n++;
+ }
+printf("%i", suma);
+  return 0;
+}	
