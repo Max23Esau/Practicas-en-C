@@ -1,0 +1,30 @@
+//Ingresa nombre, sexo y edad. Si es mujer y mayor de edad imprima su nombre
+#include <stdio.h>
+int main() {
+ 
+ char nombre[30], sexo[15];
+ int edad;
+ 
+ printf("Ingresa tu nombre de pila: ");
+ gets(nombre);
+ 
+ printf("Ingresa tu sexo: ");
+ gets(sexo);
+ 
+ printf("Ingresa tu edad: ");
+ scanf("%i", &edad);
+ 
+ if(edad >= 18 && strcmp(sexo,"femenino") == 0)
+ {
+   printf("Adelante %s Puedes pasar.", nombre);
+ }
+ else if(edad >= 18 && strcmp(sexo,"masculino") == 0)
+ {
+   printf("Lo siento, es un lugar exclusivo para mujeres!!!");
+ }
+ else
+ {
+   printf("Largate de aqui, es lugar para adultos !!!");
+ }
+ return 0;
+}
