@@ -1,0 +1,25 @@
+//Calcula la raiz cuadrada de un numero, si es negativa imprime que es imaginaria
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+ 
+ int numero;
+ float raiz;
+ 
+ printf("Ingrese su numero favorito: ");
+ scanf("%i", &numero);
+  
+ raiz = sqrt((numero));
+ 
+ if(raiz > 0)
+ {
+   printf("La raiz cuadrada de %i es %.2f", numero, raiz);
+ }
+ else
+ {
+   printf("La raiz cuadrada de %i es imaginaria", numero);
+ }
+ 
+ return 0;
+}
