@@ -1,0 +1,42 @@
+//Realiza tres operaciones a elegir. Cubo de un número, numero par o impar, salir.
+#include <stdio.h>
+#include <math.h>
+ 
+int main() {
+ 
+ int option, num1;
+ float cubo, resultado;
+ 
+ printf("\n\tQue operacion te gustaria hacer:\n ");
+ printf("\n1. Calcular el cubo de un numero\n2. Saber si es par o impar un numero\n3. Salir");
+ printf("\n¿Que opcion eliges?: ");
+ scanf("%i", &option);
+ 
+ switch(option)
+ {
+   case 1:
+   printf("\nIngrese el numero que desea calcular: ");
+   scanf("%f", &cubo);
+   resultado = pow(cubo,3);
+   printf("El cubo de %.2f es %.2f", cubo,raiz);
+   break;
+ 
+   case 2:
+   printf("\nIngrese un numero: ");
+   scanf("%i", &num1);
+   if(num1 % 2 == 0)
+   {
+     printf("El %i es par", num1);
+   }
+   else
+   {
+     printf("El %i es impar", num1);
+   }
+   break;
+ 
+   case 3: break;
+ 
+   default: printf("Opcion no valida");
+ }
+ return 0;
+}
