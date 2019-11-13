@@ -1,0 +1,23 @@
+//Ingresa el nombre y signo zodiacal. Solo si es aries, imprime los valores en pantalla
+#include <stdio.h>
+int main() {
+ 
+ char nombre[30],signo[20];
+ 
+ printf("Ingresa tu nombre: ");
+ gets(nombre);
+ 
+ printf("Ingresa tu signo zodiacal: ");
+ gets(signo); 
+ 
+ if(strcmp(signo,"aries") == 0)
+ {
+   printf("Felicidades %s Por ser Aries eres Bienvenido", nombre);
+ }
+ else
+ {
+   printf("Si no eres Aries no puedes pasar !!!");
+ }
+ 
+ return 0;
+}
