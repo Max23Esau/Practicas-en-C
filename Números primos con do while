@@ -1,0 +1,22 @@
+//Mostar los 10 primeros numeros con do while. Y manda un saludo
+#include <stdio.h>
+int main() {
+
+ int numero = 0;
+ char saludo;
+ 
+ do
+ {
+   printf("%i, ", numero);
+   numero++;
+ }while(numero<10);
+ 
+ do{
+   fflush(stdin);
+   printf("\nHola amigo !");
+   printf("\nOprime 'h' para saludar de nuevo: ");
+   scanf("%c", &saludo);
+ }while(saludo == 'h' || saludo == 'H');
+ 
+ return 0;
+}
