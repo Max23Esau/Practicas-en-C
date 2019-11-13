@@ -1,0 +1,48 @@
+//Monedero virtual con funciones de depositar, retirar, mostrar saldo actual y salir. La cuenta tiene $1000 dolares.
+#include <stdio.h>
+int main() {
+ 
+ int opcion, deposito, retiro, saldoActual = 1000;
+ 
+ printf("\nBienvenido a BBVE\nEste es su monedero virtual\n\n¿Que opcion desea hacer hoy?\n");
+ printf("\nDeposito en efectivo - 1");
+ printf("\nRetiro en efectivo - 2");
+ printf("\nSaldo actual de la cuenta - 3");
+ printf("\nSalir - 4");
+ printf("\nQue opcion elegi: ");
+ scanf("%i", &opcion);
+ 
+ switch(opcion)
+ {
+   case 1:
+   printf("\n¿Cuato desea depositar? ");
+   scanf("%i", &deposito);
+   saldoActual += deposito;
+   printf("\nSu saldo actual es de $%i", saldoActual);
+   break;
+ 
+   case 2:
+   printf("\n¿Cuanto desea retirar? ");
+   scanf("%i", &retiro);
+     if(retiro > saldoActual)
+     {
+       printf("No tiene fondos suficientes\nSolo cuenta con $%i", saldoActual);
+     }
+     else{
+     saldoActual -= retiro;
+     printf("\nAcaba de retirar $%i", retiro);
+     printf("\nSu saldo actual es de $%i", saldoActual);
+     }
+   break;
+ 
+   case 3:
+   printf("\nSu saldo actual es de $%i", saldoActual);
+   break;
+ 
+   case 4: break;
+ 
+   default: printf("\nOpcion no valida");
+ }
+ 
+ return 0;
+}
