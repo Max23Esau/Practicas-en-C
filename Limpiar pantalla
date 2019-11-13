@@ -1,0 +1,24 @@
+//Limpie la pantalla ingresando el numero 1
+#include <stdio.h>
+int main() {
+ 
+ int tecla;
+ 
+ printf("------------------------------------");
+ printf("\n------------------------------------");
+ printf("\n------------------------------------");
+ printf("\n------------------------------------");
+ printf("\nAlgo a salido mal, presiona 1 para limpiar la pantalla: ");
+ scanf("%i",&tecla);
+ 
+ while(tecla != 1)
+ {
+   fflush(stdin);
+   printf("\nIntenta de nuevo: ");
+   scanf("%i",&tecla);
+ }
+ 
+ system("cls");
+ printf("\nAhora si esta limpia la pantalla !");
+ return 0;
+}
