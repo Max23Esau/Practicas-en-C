@@ -1,0 +1,27 @@
+//Indica al usuario el descuento de cada marca de motocicleta
+#include <stdio.h>
+int main() {
+ 
+ char marca;
+ printf("Bienvenido\nIngrese la letra de la marca que le interese: ");
+ printf("\nSuzuki S\nYamaha Y\nHonda H\nOtras O\n");
+ scanf("%c",&marca);
+  switch(marca)
+ {
+   case 'S':
+   printf("Suzuki tiene un 10 por ciento de descuento");
+   break;
+   case 'Y':
+   printf("Yamaha tiene un 8 por ciento de descuento");
+   break;
+   case 'H':
+   printf("Honda tiene un 5 por ciento de descuento");
+   break;
+   case 'O':
+   printf("Las otras tiene un 2 por ciento de descuento");
+   break;
+ 
+   default: printf("Letra no admitida");
+ }
+ return 0;
+}
