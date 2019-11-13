@@ -1,0 +1,23 @@
+//Imprime la suma de los numeros pares desde 1 hasta n. Imprime la cantidad de numeros que sumaste
+#include <stdio.h>
+int main() {
+
+ int n, suma=0, totalNumeros=0;
+ 
+ printf("Ingrese un numero: ");
+ scanf("%i", &n);
+  printf("\nNumeros sumados: ");
+ for(int i=1; i<=n; i++)
+ {
+    if(i%2==0)
+   {
+     suma += i;
+     printf("%i, ",i);
+     totalNumeros++;
+   }
+ }
+ printf("\nSumamos %i numeros en total",totalNumeros); 
+ printf("\nLa suma total de los numeros es: %i",suma); 
+ 
+ return 0;
+}
