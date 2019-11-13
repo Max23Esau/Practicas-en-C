@@ -1,0 +1,22 @@
+//Piramide de asteriscos
+#include <stdio.h>
+int main()
+{ 
+ int i,j,k,filas;
+ printf("Digite el numero de filas de su piramide: ");
+ scanf("%i", &filas);
+ for(i=0;i<filas;i++)
+ {
+   for(k=filas;k>i;k--)
+   {
+     printf(" ");
+   }
+  
+   for(j=0;j<i+1;j++)
+   {
+     printf(" *");
+   }
+  printf("\n");
+}
+ return 0;
+}
