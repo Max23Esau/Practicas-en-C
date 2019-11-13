@@ -1,0 +1,19 @@
+// Multiplos de 3. Desde 1 hasta n.
+#include <stdio.h>
+#include <math.h>
+int main() {
+ 
+ int nVeces, iterador = 1, multiplos = 0;
+ 
+ printf("Ingrese el numero de multiplos de 3 que quiere ver: ");
+ scanf("%i", &nVeces);
+ 
+ while(iterador <= nVeces)
+ {
+   multiplos += 3;
+   printf("%i.\n", multiplos);
+   iterador++;
+ }
+ 
+return 0;
+}
