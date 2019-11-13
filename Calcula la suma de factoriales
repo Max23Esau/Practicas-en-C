@@ -1,0 +1,29 @@
+//Calcula la suma de factoriales
+#include <stdio.h>
+ 
+int main() {
+ 
+ int i,number1,number2,factorial1=1,factorial2=1,sumaFactores=0;
+ 
+ printf("Ingresa un numero: "); 
+ scanf("%i",&number1);
+ 
+ printf("\nIngresa otro numero: "); 
+ scanf("%i",&number2);
+  for(i=1; i<=number1; i++)
+ {
+   factorial1 *= i;
+ }
+ printf("\nPrimer factorial = %i", factorial1);
+ 
+ for(i=1; i<=number2; i++)
+ {
+   factorial2 *= i;
+ }
+ printf("\nSegundo factorial = %i", factorial2);
+ 
+ sumaFactores = factorial1 + factorial2;
+ printf("\nEsta es la suma del primer factor y el segundo factor: %i",sumaFactores);
+ 
+ return 0;
+}
