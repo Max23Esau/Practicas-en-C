@@ -1,0 +1,39 @@
+//Mostrar los meses del año, pidiendole al usuario un numero entre 1-12 y mostrar el mes correspondiente
+#include <stdio.h>
+int main() {
+
+ int mes;
+ 
+ printf("Ingrese un numero entre 1 y 12: ");
+ scanf("%i", &mes);
+ 
+ switch(mes)
+ {
+   case 1: printf("Elegiste el mes de Enero");
+   break;
+   case 2: printf("Elegiste el mes de Febrero");
+   break;
+   case 3: printf("Elegiste el mes de Marzo");
+   break;
+   case 4: printf("Elegiste el mes de Abril");
+   break;
+   case 5: printf("Elegiste el mes de Mayo");
+   break;
+   case 6: printf("Elegiste el mes de Junio");
+   break;
+   case 7: printf("Elegiste el mes de Julio");
+   break;
+   case 8: printf("Elegiste el mes de Agosto");
+   break;
+   case 9: printf("Elegiste el mes de Septiembre");
+   break;
+   case 10: printf("Elegiste el mes de Octubre");
+   break;
+   case 11: printf("Elegiste el mes de Noviembre");
+   break;
+   case 12: printf("Elegiste el mes de Diciembre");
+   break;
+ } 
+ 
+ return 0;
+}
