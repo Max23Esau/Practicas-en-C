@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+float media(float n1, float n2){
+
+	float resultado = 0;
+	resultado = (n1 + n2) / 2;
+	printf("La media de %.1f %.1f es %.1f", n1, n2, resultado);
+  
+	return 0;
+}
+
+int main(){
+	
+	float a,b;
+  
+	printf("Ingrese un numero: ");
+	scanf("%f", &a);
+  
+	printf("Ingrese otro numero: ");	
+	scanf("%f", &b);
+	
+	media(a,b);
+	
+	return 0;
+}
