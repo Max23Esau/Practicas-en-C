@@ -3,7 +3,7 @@
     floor(x)  -> Redonde hacia el numero orinalmente ingresado.
     fabs(x)   -> Devuelve el valor absoluto de x. 
     fmod(x,y) -> Calcula el resto de la divicion de x/y
-    pow(x,y)  -> Eleva un numero 'y' a la potencia 'x'.
+    pow(x,y)  -> Eleva un numero 'x' a la potencia 'y'
     sqrt(x)   -> Devuelve la raiz cuadrada de x
 
 */
