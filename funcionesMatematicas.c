@@ -28,8 +28,6 @@ int main(){
   resto(x,y);
   potencia(x,y);
   raizCuadrada(x);
-  printf("\n------------------------------------------------------\n");
-  printf("                    Game Over\n");
 
   return 0;
 }
@@ -96,5 +94,7 @@ void raizCuadrada()
   scanf("%i",&a);
   resultado = sqrt(a);
   printf("\nLa raiz cuadrada de %i es: %.2f\n",a, resultado);
+  printf("\n------------------------------------------------------\n");
+  printf("                    Game Over\n");
 }
 
