@@ -2,20 +2,20 @@
 
 void pesos_a_dolares()
 {
-  float resultado, cantidad, dolar = 19.56;
+  float resultado, cantidad, peso = 0.051;
 
   printf("\nIngresa la cantidad que deseas convertir: ");
   scanf("%f", &cantidad);
-  resultado = cantidad * dolar;
-  printf("%.2f pesos son %.2f dolares", cantidad, resultado);
+  resultado = cantidad * peso;
+  printf("$%.2f pesos son $%.2f dolares", cantidad, resultado);
 }
 void dolares_a_pesos()
 {
-  float resultado, cantidad, peso = 0.051;
+  float resultado, cantidad, dolar = 19.56;
   printf("\nIngresa la cantidad que deseas convertir: ");
   scanf("%f", &cantidad);
-  resultado = cantidad * peso ;
-  printf("%.2f dolares son %.2f pesos", cantidad, resultado);
+  resultado = cantidad * dolar;
+  printf("$%.2f dolares son $%.2f pesos", cantidad, resultado);
 }
 
 int main(void) {
